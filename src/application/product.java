@@ -1,15 +1,15 @@
 package application;
 
-public class product {
+public class Product {
 
 	private String name;
 	private Double price;
 	private Integer quantity;
 	
-	public product() {
+	public Product() {
 		
 	}
-	public product(String name, Double price, Integer quantity) {
+	public Product(String name, Double price, Integer quantity) {
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;
@@ -47,9 +47,4 @@ public class product {
 	public String toString() {
 		return getName() + "," + String.format("%.2f",getPrice()) + ","+getQuantity();
 	}
-	
-	
-	
-	
-
 }
