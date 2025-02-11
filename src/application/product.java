@@ -39,12 +39,10 @@ public class Product {
 		this.quantity = quantity;
 	}
 	
-	public void totalPrice(Double total) {
+	public double totalPrice() {
 	
-		total = getPrice() * getQuantity();
+	return price * quantity;
 	}
 	
-	public String toString() {
-		return getName() + "," + String.format("%.2f",getPrice()) + ","+getQuantity();
-	}
+	
 }
